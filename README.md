@@ -6,9 +6,9 @@ Un joc economic educativ în care construiești o fermă sau conduci o companie 
 
 ## Descarcă și joacă
 
-**[Windows x64 - descarcă EXE](https://github.com/Chuvachox/FirmoQuest/releases/download/v0.4.1-alpha/FirmoQuest-Windows-x64.exe)**
+**[Windows x64 - descarcă EXE](https://github.com/Chuvachox/FirmoQuest/releases/download/v0.4.2-alpha/FirmoQuest-Windows-x64.exe)**
 
-**[Android 7+, ARM64 - descarcă APK](https://github.com/Chuvachox/FirmoQuest/releases/download/v0.4.1-alpha/FirmoQuest-Android.apk)**
+**[Android 7+, ARM64 - descarcă APK](https://github.com/Chuvachox/FirmoQuest/releases/download/v0.4.2-alpha/FirmoQuest-Android.apk)**
 
 Pe Windows deschide EXE-ul. Pe Android instalează APK-ul și permite instalarea din browser dacă telefonul o cere. Jocul include componentele necesare și funcționează fără internet după descărcare.
 
@@ -19,7 +19,7 @@ Pe telefon joacă în peisaj. Glisează în sus sau în jos peste carduri pentru
 - Două afaceri: fermă agricolă și companie IT.
 - Trei dificultăți gratuite în demo: Ușor, Mediu și Greu.
 - Producție, comerț, echipă, evenimente și o hartă a dezvoltării.
-- Obiectiv: 4000 MDL profit în cel mult 30 de zile.
+- Obiectiv: 4000 MDL profit în 30 de zile pe Ușor, 20 pe Mediu sau 10 pe Greu. Noile limite se aplică partidelor noi; salvările vechi păstrează termenul inițial.
 - Interfață, explicații și mesaje în română, rusă și engleză. Schimbă limba din meniul principal sau prin globul din dreapta sus în timpul jocului.
 - Salvare locală automată, cu opțiunea de a continua partida.
 
