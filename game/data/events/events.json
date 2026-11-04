@@ -1,0 +1,190 @@
+{
+  "events": [
+    {
+      "id": "fuel_shock",
+      "scenario": "agro",
+      "minDay": 3,
+      "maxDay": 30,
+      "title": "Motorina se scumpește peste noapte",
+      "text": "Posterioarele de la benzină au afișat un preț nou dimineața. Transportul și utilajele costă mai mult o perioadă.",
+      "choices": [
+        { "label": "Suportă costul (resurse mai scumpe)", "effect": { "costMod": 0.25, "duration": 5 } },
+        { "label": "Renunți la transport o perioadă (-400)", "effect": { "balance": -400 } }
+      ]
+    },
+    {
+      "id": "border_block",
+      "scenario": "agro",
+      "minDay": 5,
+      "maxDay": 30,
+      "title": "Blocaj la frontieră",
+      "text": "Camioanele cu marfă stau la coadă de trei zile. Cererea scade, iar prețurile pe piață o iau în jos.",
+      "effect": { "priceMod": -0.2, "duration": 5 }
+    },
+    {
+      "id": "good_weather",
+      "scenario": "agro",
+      "minDay": 4,
+      "maxDay": 30,
+      "title": "Vreme favorabilă, piață inflamată",
+      "text": "Toată lumea cumpără în panică înainte de iarnă. Prețurile la produsele tale cresc.",
+      "effect": { "priceMod": 0.2, "duration": 4 }
+    },
+    {
+      "id": "machinery_break",
+      "scenario": "agro",
+      "minDay": 6,
+      "maxDay": 30,
+      "title": "Avarie la utilaje",
+      "text": "Utilajul s-a stricat exact în ziua de plată. Reparația costă, dar amânia costă mai mult.",
+      "choices": [
+        { "label": "Reparație urgentă (-700)", "effect": { "balance": -700 } },
+        { "label": "Amâni reparația (costuri fixe mai mari)", "effect": { "upkeepMod": 0.35, "duration": 5 } }
+      ]
+    },
+    {
+      "id": "subsidy_agro",
+      "scenario": "agro",
+      "minDay": 8,
+      "maxDay": 30,
+      "title": "Program de susținere a agriculturii",
+      "text": "A apărut o linie de finanțare pentru micii producători. Cererea se depune repede, banii vin și mai repede.",
+      "effect": { "balance": 1400 }
+    },
+    {
+      "id": "license_sale",
+      "scenario": "it",
+      "minDay": 3,
+      "maxDay": 30,
+      "title": "Reduceri de licențe",
+      "text": "Furnizorul de licențe are o ofertă „pentru că e sfârșit de trimestru”. Echipamentul devine mai ieftin.",
+      "effect": { "costMod": -0.3, "duration": 4 }
+    },
+    {
+      "id": "big_client",
+      "scenario": "it",
+      "minDay": 5,
+      "maxDay": 30,
+      "title": "Contract de la un client din afară",
+      "text": "O companie din offshore îți trimite un avans. Actele sunt „în curs de pregătire”, banii sunt reali.",
+      "effect": { "balance": 2200 }
+    },
+    {
+      "id": "ransomware",
+      "scenario": "it",
+      "minDay": 6,
+      "maxDay": 30,
+      "title": "Infecție cu ransomware",
+      "text": "Un e-mail cu „factură atașată” a făcut ravagii. Fie plătești recuperarea, fie pierzi proiectele.",
+      "choices": [
+        { "label": "Recuperare plătită (-900)", "effect": { "balance": -900 } },
+        { "label": "Pierzi datele (-1800)", "effect": { "balance": -1800 } }
+      ]
+    },
+    {
+      "id": "new_competitor",
+      "scenario": "it",
+      "minDay": 7,
+      "maxDay": 30,
+      "title": "A apărut un concurent",
+      "text": "O firmă nouă vinde aceleași servicii cu 20% mai ieftin. Contractele tale valorează mai puțin o perioadă.",
+      "effect": { "priceMod": -0.15, "duration": 6 }
+    },
+    {
+      "id": "digitalization_wave",
+      "scenario": "it",
+      "minDay": 4,
+      "maxDay": 30,
+      "title": "Val de digitalizare",
+      "text": "Toată lumea vrea „un site și o aplicație”. Valoarea contractelor crește temporar.",
+      "effect": { "priceMod": 0.22, "duration": 5 }
+    },
+    {
+      "id": "tax_control",
+      "scenario": "any",
+      "minDay": 4,
+      "maxDay": 30,
+      "title": "Control fiscal",
+      "text": "Inspectorii au sosit fără anunțare și au găsit „nereguli minore” în acte. Ai de ales între avocat și amendă.",
+      "choices": [
+        { "label": "Avocat și contestație (-600)", "effect": { "balance": -600 } },
+        { "label": "Plătești amenda (-1500)", "effect": { "balance": -1500 } }
+      ]
+    },
+    {
+      "id": "inflation",
+      "scenario": "any",
+      "minDay": 5,
+      "maxDay": 30,
+      "title": "Inflația își face de cap",
+      "text": "Prețurile cresc peste tot, inclusiv facturile tale. Costurile fixe devin mai grele.",
+      "effect": { "upkeepMod": 0.25, "duration": 7 }
+    },
+    {
+      "id": "currency_drop",
+      "scenario": "any",
+      "minDay": 6,
+      "maxDay": 30,
+      "title": "Cursul leului se depreciază",
+      "text": "Leul pierde teren în fața euro. Exportatorii se bucură, cumpărătorii oftează - cererea crește.",
+      "effect": { "priceMod": 0.12, "duration": 3 }
+    },
+    {
+      "id": "utility_bill",
+      "scenario": "any",
+      "minDay": 3,
+      "maxDay": 30,
+      "title": "Factură neașteptată la utilități",
+      "text": "Ai uitat de o factură veche. O plătești acum sau ea devine o „investiție” în penalizări.",
+      "effect": { "balance": -450 }
+    },
+    {
+      "id": "expo",
+      "scenario": "any",
+      "minDay": 8,
+      "maxDay": 30,
+      "title": "Târg de profil",
+      "text": "Se organizează un târg local. Participarea costă, dar aduce vizibilitate și clienți.",
+      "choices": [
+        { "label": "Participi (-500, prețuri mai bune)", "effect": { "balance": -500, "priceMod": 0.2, "duration": 6 } },
+        { "label": "Stai acasă", "effect": { "balance": 0 } }
+      ]
+    },
+    {
+      "id": "grant_call",
+      "scenario": "any",
+      "minDay": 10,
+      "maxDay": 30,
+      "title": "Apel de grant pentru tineri antreprenori",
+      "text": "Ai completat formularul „în ultima zi” și, minune, ai trecut. Banii intră în cont.",
+      "effect": { "balance": 1200 }
+    },
+    {
+      "id": "rate_hike",
+      "scenario": "any",
+      "minDay": 7,
+      "maxDay": 30,
+      "title": "Banca majorează dobânzile",
+      "text": "Consiliul de administrație a decis: ratele cresc. Costurile tale fixe urcă și ele.",
+      "effect": { "upkeepMod": 0.2, "duration": 5 }
+    },
+    {
+      "id": "supply_delay",
+      "scenario": "any",
+      "minDay": 9,
+      "maxDay": 30,
+      "title": "Întârziere în aprovizionare",
+      "text": "Livrarea de resurse întârzie o săptămână. Ce ai în stoc e acum mai valoros pe piață.",
+      "effect": { "priceMod": 0.15, "duration": 4 }
+    },
+    {
+      "id": "bureaucracy",
+      "scenario": "any",
+      "minDay": 12,
+      "maxDay": 30,
+      "title": "Coada de la ghișeu",
+      "text": "Pentru o simplă adeverință ai nevoie de alte trei adeverințe. Ziua pierdută costă.",
+      "effect": { "balance": -300 }
+    }
+  ]
+}

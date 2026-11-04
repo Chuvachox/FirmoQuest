@@ -1,0 +1,110 @@
+{
+  "author": "Kenney",
+  "license": "CC0-1.0",
+  "sources": [
+    "https://kenney.nl/assets/furniture-kit",
+    "https://kenney.nl/assets/nature-kit"
+  ],
+  "files": [
+    {
+      "file": "desk.glb",
+      "pack": "furniture-kit",
+      "sha256": "0164fe828f028b321730fb8c74502e353583f751be74da1682d42fff7d3c5a42"
+    },
+    {
+      "file": "chairDesk.glb",
+      "pack": "furniture-kit",
+      "sha256": "46406619186034cbe92b19b79a5f1a8e3f442a17a70a7524ef2c0ad0f35095c6"
+    },
+    {
+      "file": "computerScreen.glb",
+      "pack": "furniture-kit",
+      "sha256": "5942cbad29a2d2b956619569926e81d50a4174403d592fece6556e57632dc643"
+    },
+    {
+      "file": "laptop.glb",
+      "pack": "furniture-kit",
+      "sha256": "5fa8a1f4a71ab8d82ef64da77a6973ffd350c6d4557516069a4ffd4bb8d808af"
+    },
+    {
+      "file": "pottedPlant.glb",
+      "pack": "furniture-kit",
+      "sha256": "5b760eda2766f75fda36b2c5df652a1662f82981ef64cd8fa7fe7bcd386b3a15"
+    },
+    {
+      "file": "bookcaseOpen.glb",
+      "pack": "furniture-kit",
+      "sha256": "750702218d68c062b15dfef6ab06a4014d1cfa8bd05f02e57c53b7e13bec157c"
+    },
+    {
+      "file": "kitchenCoffeeMachine.glb",
+      "pack": "furniture-kit",
+      "sha256": "063f582c6fa0f00a9f24e3393dac2295491c4becdaf5513c893ab1a2826b6ec3"
+    },
+    {
+      "file": "cardboardBoxClosed.glb",
+      "pack": "furniture-kit",
+      "sha256": "4af079dca52960912764574950f0549ff2ae1224b3db1528718629473a2d5d81"
+    },
+    {
+      "file": "table.glb",
+      "pack": "furniture-kit",
+      "sha256": "ff1a94498d023957f4bc3ff6f55a7a82977d336dbf01a573b3364f03afe5ff61"
+    },
+    {
+      "file": "bench.glb",
+      "pack": "furniture-kit",
+      "sha256": "ba05a6d23a5a5a44da016757632070e47ff7587ce10e2f6d6d52328b4cf5489b"
+    },
+    {
+      "file": "tree_oak.glb",
+      "pack": "nature-kit",
+      "sha256": "d7fd8773674928c50c11b66d12c636d49bdcc15a8b1c7fbb98e6f63a3439a3f3"
+    },
+    {
+      "file": "tree_small.glb",
+      "pack": "nature-kit",
+      "sha256": "d26c0eeed65cc681667f50042ef23ec72ce47ae3b39837bfeec170b05ba6ab6a"
+    },
+    {
+      "file": "plant_bush.glb",
+      "pack": "nature-kit",
+      "sha256": "ae7b1beb39e242b13f5f29e3ec23ef21034b814f82297b8aa00a9bf4e1b09590"
+    },
+    {
+      "file": "fence_simple.glb",
+      "pack": "nature-kit",
+      "sha256": "ecaf6c29532aa9fd305a8ef71df769d60748bd797f2eb1c63bdefc4edb8062a7"
+    },
+    {
+      "file": "crops_wheatStageA.glb",
+      "pack": "nature-kit",
+      "sha256": "d8c690d473a230741cf4d03fa6a69a405f0ae6a246847a2a72e7f50dd5bebc08"
+    },
+    {
+      "file": "crops_wheatStageB.glb",
+      "pack": "nature-kit",
+      "sha256": "589db4d6fe0bd7616c1f1c2f10a335704b2dad5d24638dc08a5b2e5334c68852"
+    },
+    {
+      "file": "crops_cornStageA.glb",
+      "pack": "nature-kit",
+      "sha256": "085e2f0501f0f39acc10762cf46449fd962d9ac0630e7fd128cf9aa4a1edcfb5"
+    },
+    {
+      "file": "crops_cornStageD.glb",
+      "pack": "nature-kit",
+      "sha256": "d90d9cbba85e99526b254adee638495f914480831ab41d00807378c004c112c3"
+    },
+    {
+      "file": "crops_leafsStageA.glb",
+      "pack": "nature-kit",
+      "sha256": "f30d55780aa6668316a272eac8ea908e981d16fea7dc4fd1de4e68aa8170cee2"
+    },
+    {
+      "file": "crops_leafsStageB.glb",
+      "pack": "nature-kit",
+      "sha256": "aea4fe9a7943e7b2b7df99dc4fa00b85e34d00ea9b8e1b144504cef25d77b98c"
+    }
+  ]
+}

@@ -1,0 +1,9 @@
+* text=auto eol=lf
+*.cs text eol=lf
+*.json text eol=lf
+*.md text eol=lf
+*.ps1 text eol=lf
+*.bat text eol=crlf
+*.png binary
+*.glb binary
+game/assets/ui/icons/world/*LICENSE.txt -text

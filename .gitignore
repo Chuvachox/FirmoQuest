@@ -1,0 +1,51 @@
+# Godot 4.1+ generated cache; keep source .uid files.
+.godot/
+*.translation
+
+# .NET generated files
+bin/
+obj/
+.vs/
+*.user
+*.suo
+
+# Builds and temporary files
+/builds/
+/exports/
+*.tmp
+*.log
+~$*
+.DS_Store
+Thumbs.db
+Desktop.ini
+
+# Secrets and private export credentials
+.env
+.env.*
+!.env.example
+export_credentials.cfg
+*.pfx
+*.p12
+*.key
+
+# Editors' local state
+.idea/
+.vscode/
+
+# Local Python validation cache
+__pycache__/
+*.py[cod]
+
+# Godot gallery output
+shots/
+
+# Portable build tools downloaded automatically for developers
+/.tools/
+
+# Android signing material
+*.keystore
+*.jks
+*.pem
+*.apk
+*.exe
+*.pdb

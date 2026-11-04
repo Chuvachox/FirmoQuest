@@ -1,0 +1,40 @@
+{
+  "title": "FirmoQuest",
+  "subtitle": "Simulator economic inspirat din realitatea Republicii Moldova",
+  "currency": "MDL",
+  "daysTotal": 30,
+  "targetProfit": 4000,
+  "eventChance": 0.4,
+  "difficulties": [
+    {
+      "id": "easy",
+      "label": "Ușor",
+      "short": "Grant",
+      "description": "Afacerea beneficiază de un grant care acoperă o parte din costurile inițiale.",
+      "startBalance": 1500,
+      "grant": 2000,
+      "loan": 0,
+      "loanInstallment": 0
+    },
+    {
+      "id": "medium",
+      "label": "Mediu",
+      "short": "Bani proprii",
+      "description": "Afacerea este finanțată exclusiv din banii proprii.",
+      "startBalance": 3000,
+      "grant": 0,
+      "loan": 0,
+      "loanInstallment": 0
+    },
+    {
+      "id": "hard",
+      "label": "Complex",
+      "short": "Credit",
+      "description": "Afacerea începe cu un credit care trebuie rambursat în fiecare zi.",
+      "startBalance": 1000,
+      "grant": 0,
+      "loan": 1500,
+      "loanInstallment": 100
+    }
+  ]
+}

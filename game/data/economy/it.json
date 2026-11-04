@@ -1,0 +1,157 @@
+{
+  "id": "it",
+  "name": "Companie IT",
+  "short": "Companie IT",
+  "description": "Angajează personal, ia contracte, dezvoltă servicii și încasează veniturile.",
+  "goal": "Obține un profit de cel puțin ținta zilnică în 30 de zile.",
+  "color": "#2f6fb0",
+  "dailyUpkeep": 130,
+  "upkeepLabel": "Chirie, servere și utilități",
+  "slots": 2,
+  "slotsLabel": "Contracte simultane",
+  "resources": [
+    {
+      "id": "equipment",
+      "name": "Echipament și licențe",
+      "unit": "buc",
+      "price": 400,
+      "desc": "Licențe, domenii și echipament pentru un proiect."
+    },
+    {
+      "id": "server",
+      "name": "Server cloud",
+      "unit": "buc",
+      "price": 700,
+      "desc": "Resurse cloud pentru aplicații mobile."
+    }
+  ],
+  "products": [
+    {
+      "id": "site",
+      "name": "Site de prezentare",
+      "resource": "equipment",
+      "input": 1,
+      "days": 3,
+      "yield": 1,
+      "basePrice": 1000,
+      "autoSell": true,
+      "desc": "Contract mic, se plătește la livrare."
+    },
+    {
+      "id": "maintenance",
+      "name": "Mentenanță lunară",
+      "resource": "equipment",
+      "input": 1,
+      "days": 3,
+      "yield": 1,
+      "basePrice": 800,
+      "autoSell": true,
+      "desc": "Abonament recurent, venit sigur."
+    },
+    {
+      "id": "app",
+      "name": "Aplicație mobilă",
+      "resource": "server",
+      "input": 1,
+      "days": 7,
+      "yield": 1,
+      "basePrice": 2600,
+      "autoSell": true,
+      "desc": "Contract mare, durează mai mult."
+    }
+  ],
+  "upgrades": [
+    {
+      "id": "workstations",
+      "name": "Calculatoare noi",
+      "price": 750,
+      "desc": "Reducere cu 1 zi a duratei contractelor.",
+      "effect": {
+        "type": "reduceDays",
+        "value": 1
+      }
+    },
+    {
+      "id": "automation",
+      "name": "Automatizare (CI/CD)",
+      "price": 900,
+      "desc": "Încă 1 zi redusă din durata contractelor.",
+      "effect": {
+        "type": "reduceDays",
+        "value": 1
+      }
+    },
+    {
+      "id": "licenses",
+      "name": "Licențe în volum",
+      "price": 650,
+      "desc": "Echipamentul costă cu 20% mai puțin.",
+      "effect": {
+        "type": "costDown",
+        "value": 0.2
+      }
+    },
+    {
+      "id": "marketing",
+      "name": "Marketing digital",
+      "price": 650,
+      "desc": "Valoarea contractelor crește cu 15%.",
+      "effect": {
+        "type": "priceUp",
+        "value": 0.15
+      }
+    },
+    {
+      "id": "team",
+      "name": "Echipă suplimentară",
+      "price": 1300,
+      "desc": "+1 contract simultan.",
+      "effect": {
+        "type": "slots",
+        "value": 1
+      }
+    },
+    {
+      "id": "remote",
+      "name": "Birou remote",
+      "price": 550,
+      "desc": "Costurile fixe zilnice scad cu 25%.",
+      "effect": {
+        "type": "upkeepDown",
+        "value": 0.25
+      }
+    }
+  ],
+  "staff": [
+    {
+      "id": "junior",
+      "name": "Dezvoltator junior",
+      "salary": 90,
+      "desc": "Reducere cu 1 zi a duratei contractelor.",
+      "effect": {
+        "type": "reduceDays",
+        "value": 1
+      }
+    },
+    {
+      "id": "designer",
+      "name": "Designer UI/UX",
+      "salary": 55,
+      "desc": "Valoarea contractelor crește cu 8%.",
+      "effect": {
+        "type": "priceUp",
+        "value": 0.08
+      }
+    },
+    {
+      "id": "sales",
+      "name": "Manager vânzări",
+      "salary": 75,
+      "desc": "Valoarea contractelor crește cu 12%.",
+      "effect": {
+        "type": "priceUp",
+        "value": 0.12
+      }
+    }
+  ]
+}

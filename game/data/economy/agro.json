@@ -1,0 +1,154 @@
+{
+  "id": "agro",
+  "name": "Ferma Agricolă",
+  "short": "Agricultură",
+  "description": "Cultivă plante, cumpără resurse, recoltează și vinde producția pe piață.",
+  "goal": "Obține un profit de cel puțin ținta zilnică în 30 de zile.",
+  "color": "#3c8d4a",
+  "dailyUpkeep": 60,
+  "upkeepLabel": "Întreținere zilnică (mentenanță, utilități)",
+  "slots": 3,
+  "slotsLabel": "Parcele de teren",
+  "resources": [
+    {
+      "id": "seed_wheat",
+      "name": "Sămânță grâu",
+      "unit": "sac",
+      "price": 40,
+      "desc": "Sămânță de grâu de toamnă."
+    },
+    {
+      "id": "seed_corn",
+      "name": "Sămânță porumb",
+      "unit": "sac",
+      "price": 60,
+      "desc": "Sămânță hibrid de porumb."
+    },
+    {
+      "id": "seed_veg",
+      "name": "Răsaduri legume",
+      "unit": "set",
+      "price": 90,
+      "desc": "Răsaduri de roșii și castraveți."
+    }
+  ],
+  "products": [
+    {
+      "id": "wheat",
+      "name": "Grâu",
+      "resource": "seed_wheat",
+      "input": 1,
+      "days": 4,
+      "yield": 3,
+      "basePrice": 130,
+      "autoSell": false,
+      "desc": "Recoltă de grâu vândută la siloz."
+    },
+    {
+      "id": "corn",
+      "name": "Porumb",
+      "resource": "seed_corn",
+      "input": 1,
+      "days": 5,
+      "yield": 4,
+      "basePrice": 180,
+      "autoSell": false,
+      "desc": "Porumb furajer, cerere constantă."
+    },
+    {
+      "id": "veg",
+      "name": "Legume",
+      "resource": "seed_veg",
+      "input": 1,
+      "days": 3,
+      "yield": 3,
+      "basePrice": 150,
+      "autoSell": false,
+      "desc": "Legume de sezon pentru piața locală."
+    }
+  ],
+  "upgrades": [
+    {
+      "id": "irrigation",
+      "name": "Sistem de irigații",
+      "price": 450,
+      "desc": "Reducere cu 1 zi a timpului de producție.",
+      "effect": {
+        "type": "reduceDays",
+        "value": 1
+      }
+    },
+    {
+      "id": "fertilizer",
+      "name": "Îngrășăminte",
+      "price": 650,
+      "desc": "+1 unitate la fiecare recoltă. Permite 2 loturi pe parcela.",
+      "effect": {
+        "type": "yield",
+        "value": 1
+      }
+    },
+    {
+      "id": "tractor",
+      "name": "Tractor nou",
+      "price": 550,
+      "desc": "Resursele costă cu 20% mai puțin.",
+      "effect": {
+        "type": "costDown",
+        "value": 0.2
+      }
+    },
+    {
+      "id": "bio",
+      "name": "Certificare bio",
+      "price": 500,
+      "desc": "Preț de vânzare cu 15% mai mare.",
+      "effect": {
+        "type": "priceUp",
+        "value": 0.15
+      }
+    },
+    {
+      "id": "land",
+      "name": "Teren suplimentar",
+      "price": 1100,
+      "desc": "+1 parcelă de cultură (producție simultană). Permite 3 loturi pe parcela.",
+      "effect": {
+        "type": "slots",
+        "value": 1
+      }
+    },
+    {
+      "id": "solar",
+      "name": "Panouri solare",
+      "price": 450,
+      "desc": "Costurile fixe zilnice scad cu 30%.",
+      "effect": {
+        "type": "upkeepDown",
+        "value": 0.3
+      }
+    }
+  ],
+  "staff": [
+    {
+      "id": "laborer",
+      "name": "Zilier",
+      "salary": 45,
+      "desc": "+1 unitate la fiecare recoltă.",
+      "effect": {
+        "type": "yield",
+        "value": 1
+      }
+    },
+    {
+      "id": "agronom",
+      "name": "Agronom",
+      "salary": 80,
+      "desc": "Reducere cu 1 zi a timpului de producție.",
+      "effect": {
+        "type": "reduceDays",
+        "value": 1
+      }
+    }
+  ]
+}
