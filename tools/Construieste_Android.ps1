@@ -10,7 +10,7 @@ if (-not (@(& $tools.DotnetPath --list-sdks | Where-Object { $_ -match '^(9|[1-9
 if (-not $AndroidSdkPath -or -not $JavaHome) { throw 'Configureaza AndroidSdkPath si JavaHome (JDK 17).' }
 if (-not (Test-Path -LiteralPath (Join-Path $AndroidSdkPath 'platform-tools/adb.exe')) -or
     -not (Test-Path -LiteralPath (Join-Path $JavaHome 'bin/java.exe'))) {
-    throw 'Pentru build configureaza AndroidSdkPath si JavaHome (JDK 17). Vezi README.md.'
+    throw 'Pentru build configureaza AndroidSdkPath si JavaHome (JDK 17). Vezi DEVELOPMENT.md.'
 }
 foreach ($name in @('GODOT_ANDROID_KEYSTORE_RELEASE_PATH', 'GODOT_ANDROID_KEYSTORE_RELEASE_USER', 'GODOT_ANDROID_KEYSTORE_RELEASE_PASSWORD')) {
     if (-not [Environment]::GetEnvironmentVariable($name)) { throw "Lipseste variabila de semnare: $name" }
