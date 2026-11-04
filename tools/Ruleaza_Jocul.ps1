@@ -16,6 +16,8 @@ $tools = Get-BusinessBuildTools -GodotPath $GodotPath -SkipTemplate
 $GodotPath = $tools.GodotPath
 & $tools.DotnetPath build (Join-Path $gameRoot 'BusinessSimulator.csproj') --nologo
 if ($LASTEXITCODE -ne 0) { exit $LASTEXITCODE }
+& $GodotPath --headless --path $gameRoot --import
+if ($LASTEXITCODE -ne 0) { exit $LASTEXITCODE }
 $godotArgs = @('--path', $gameRoot)
 if ($SelfTest) { $godotArgs = @('--headless') + $godotArgs + @('--', '--selftest') }
 elseif ($QaTest) { $godotArgs = @('--headless') + $godotArgs + @('--', '--qatest') }
